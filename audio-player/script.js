@@ -15,7 +15,7 @@ function nextsong(){
 function previoussong(){
 title.innerText="Peaches";
     audio.src=song.peaches;
-    audio.play;
+    audio.play();
 }
 
 
