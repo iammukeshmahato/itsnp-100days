@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Date Info</title>
+</head>
+<body>
+    <header class="bg-success">
+        <h1 align="center">Date Info</h1>
+        <h6 align="center"> ITSNP × Asmitra 100 Day Challenge - Day 3</h6>
+    </header>
+    
+    <!-- Year -->
+   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Year</span>
+  </div>
+  <input id="year" type="number" class="form-control" aria-describedby="inputGroup-sizing-default >
+  </div>
+  
+  <div  class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Month</span> </div> <input id="month" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"> </div>
+
+
+<div  class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+  </div>
+  <input id="date" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="date">
+</div>
+
+
+<center>
+<button id="submit" class="btn btn-secondary" onclick="century()">Submit</button>
+</center>
+<hr>
+
+<h3 align="center">Result</h3>
+<center>
+
+<strong>Century: </strong><span id="century"></span>
+<br>
+<strong>Day: </strong><span id="day"></span>
+</center>
+<br>
+
+</body>
+</html>
