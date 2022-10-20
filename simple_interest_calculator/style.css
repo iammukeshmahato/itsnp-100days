@@ -1,0 +1,11 @@
+#div{
+  background-color:#000000;  
+  color:#56a0f5;
+  
+}
+input{
+    border-top-style:hidden;
+    background-color:#000000;
+    border:2px solid white;
+    color:white;
+}
