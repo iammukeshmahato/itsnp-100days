@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body{
+    background-color:black;
+    color:white;
+}
+h1{
+    font-family:cursive;
+}
+button{
+    margin:100px;
+    background-color:#00fff0b;
+    color:yellow;
+    height:100px;
+    width:200px;
+    border:none;
+    font-family:fantasy,sans-serif,;
+    font-size:30px;
+    font-weight:bold;
+}
+#button{
+     color:yellow;
+}
