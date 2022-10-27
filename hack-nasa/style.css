@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    background-color:black;
+    color:green;
+    
+}
+@font-face{
+    font-family:font;
+    src: url('Tomb_Raider.ttf');
+}
+h1{
+    font-family:font;
+    letter-spacing:3px;
+}
+#img{
+    display:none;
+}
