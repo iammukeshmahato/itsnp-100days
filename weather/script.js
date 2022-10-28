@@ -1,12 +1,12 @@
 setInterval(function(){
   let d = new Date();
     let days =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    let hour = d.getHours();
-    let min = d.getMinutes();
-    let sec = d.getSeconds();
-    let yr = d.getFullYear();
-    let mnth = d.getMonth();
-    let date = d.getDate();
+    let hour = checkDigit(d.getHours());
+    let min = checkDigit(d.getMinutes());
+    let sec = checkDigit(d.getSeconds());
+    let yr = checkDigit(d.getFullYear());
+    let mnth = checkDigit(d.getMonth());
+    let date = checkDigit(d.getDate());
     let day = days[d.getDay()];
     
 
@@ -15,6 +15,14 @@ setInterval(function(){
     document.getElementById('btn').innerHTML=dates;
     document.querySelector("#year").innerText=yr;
 },100);
+
+function checkDigit(digit) {
+  if (digit < 10) {
+    return `0${digit}`;
+  } else {
+    return digit;
+  }
+}
 
 function show(){
   let city =  document.getElementById('city').value;
