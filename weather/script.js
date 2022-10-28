@@ -14,7 +14,7 @@ setInterval(function () {
   let dates = `${yr} - ${mnth} - ${date}, ${day}, ( ${final} )`;
   document.getElementById('btn').innerHTML = dates;
   document.querySelector("#year").innerText = yr;
-}, 100);
+}, 1000);
 
 function checkDigit(digit) {
   if (digit < 10) {
@@ -26,12 +26,24 @@ function checkDigit(digit) {
 
 function show() {
   let city = document.getElementById('city').value;
+  let modalContaier = document.querySelector(".modal-container");
+  modalContaier.innerHTML = `<div class="modal">
+                              <img src="./img/loading.gif" alt="loading...">
+                            </div>`;
+  modalContaier.classList.add("show");
   fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=90ffdb032c26e51b615cb172aaf9963a")
     .then(function (response) {
-      if (!response.ok) {
-        alert("No weather found for entered City.");
+      if (response.status == 404) {
+        modalContaier.innerHTML = `<div class="modal" style="flex-direction:column">
+                                    <h1>Oops..</h1>
+                                    <p>No weather found for "${city}"</p>
+                                    <button class="btn btn-primary" onclick='document.querySelector(".modal-container").classList.remove("show");'>Close</button>
+                                  </div>`;
         throw new Error("No weather found for entered City.");
+      } else {
+        modalContaier.classList.remove("show");
       }
+
       return response.json();
     })
     .then(function (data) {
