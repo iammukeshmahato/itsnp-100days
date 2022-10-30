@@ -29,18 +29,19 @@ header{
     font-weight:bold;
 }
 .label{
-    color:yellow;
+    color:#03fc45;
     font-weight:bold;
     font-size:20px;
 }
 .submit{
     font-weight:bold;
-    border-radius:50px;
-    height:50px;
-    width:100px;
+    border-radius:40px;
+    font-size:20px;
+    height:80px;
+    width:80px;
 }
-.error{
-    background-color:red;
+#error, #error1{
+    color:#f7f7f7;
     font-weight:bold;
     border-radius:5px;
 }
