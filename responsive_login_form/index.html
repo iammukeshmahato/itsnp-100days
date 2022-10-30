@@ -13,10 +13,7 @@
      <span id="span">Login Form</span>
      <br>
   </header>
-            
-           
-            
-      <form class="form" id="form">
+      <form class="form" id="form" onsubmit="lengths()" method="post" action="javascript:void(0);">
           
           <label for="username" class="label">Username</label>
           <br>
@@ -27,23 +24,22 @@
          
          <label for="password" class="label">Password</label>
           <br>
-         <input id="pass" class="input" type="password" name="password" required>
+         <input id="pass" class="input" type="password" name="password" required><br>
+         <span id="error"></span>
          <br>
          <br>
          
          
          <label for="cpassword" class="label">Confirm Password</label>
           <br>
-         <input id="cpass" class="input" type="password" name="cpassword" required>
+         <input id="cpass" class="input" type="password" name="cpassword" required><br>
+         <span id="error1"></span>
          <br>
          <br>
-         <div id="error div">
-       <span class="error" id="error"></span><br>
-       <span class="error1" id="error1"></span>  
-          </div>
-       <br>
          
-         <input type="submit" class="submit" value="login" onclick="lengths()">
+   
+         
+         <input type="submit" class="submit" value="login">
          
        
       </form>
