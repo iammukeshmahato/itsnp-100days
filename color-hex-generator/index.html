@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Generator</title>
+    <style>
+body{
+    margin:0;
+}
+
+nav{
+    background-color:black;
+    color:white;
+    width:100%;
+    text-align:center;
+}
+.text{
+  font-weight:bold; 
+}
+
+div{
+    margin:40px;
+}
+
+#input{
+    height:100px;
+    width:100%;
+}
+button{
+   
+    background-color:black;
+    color:white;
+    height:50px;
+    width:100px;
+    border-radius:10px;
+    border:none;
+}
+</style>
+</head>
+<body>
+ <nav>
+     <br>
+     <font class="text" size="6">Color Hex Generator</font>
+     <br>
+     <br>
+ </nav>   
+    
+    
+    <div id="head">
+    <b>Select Color From Here:</b>
+    <input type="color" id="input">
+    
+    <br>
+    <br>
+    
+    <center>
+    
+    <button onclick="showColor()">Show Color</button>
+    
+    <br>
+    <br>
+    
+       <strong>Color Hex Code:</strong> 
+       
+       <br>
+       <br>
+    <span id="output"></span>
+    
+    </center>
+    </div>
+    <script>
+function showColor(){
+    let color = document.querySelector('#input').value;
+ document.querySelector('#output').innerText = color;
+}
+</script>
+</body>
+</html>
