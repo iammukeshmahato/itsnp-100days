@@ -20,4 +20,4 @@ Let's explore my projects in this repo.
 
 13.[Hack NASA 🤣](https://nishantshah977.github.io/itsnp-100days/hack-nasa)
 
-14. [ Color Hex Genrator](https://nishantshah977.github.io/itsnp-100days/hex-color-generator)
+14. [ Color Hex Genrator](https://nishantshah977.github.io/itsnp-100days/color-hex-generator)
