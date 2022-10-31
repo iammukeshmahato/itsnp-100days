@@ -19,3 +19,5 @@ Let's explore my projects in this repo.
 12.[To Do](https://nishantshah977.github.io/itsnp-100days/to-do)
 
 13.[Hack NASA 🤣](https://nishantshah977.github.io/itsnp-100days/hack-nasa)
+
+14. [ Color Hex Genrator](https://nishantshah977.github.io/itsnp-100days/hex-color-generator)
